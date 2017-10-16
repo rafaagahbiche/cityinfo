@@ -1,0 +1,45 @@
+<html lang="en">
+
+<head>
+	<link rel="stylesheet" href="../node_modules/angular-material/angular-material.css">
+	<script src="../node_modules/angular/angular.js"></script> 
+	<script src="../node_modules/angular-aria/angular-aria.js"></script> 
+	<script src="../node_modules/angular-animate/angular-animate.js"></script> 
+	<script src="../node_modules/angular-material/angular-material.js"></script> 
+	<script type="text/javascript" src="scripts/tagsCtrl.js"></script>
+  <meta name="viewport" content="initial-scale=1" />
+</head>
+
+<body layout="column">
+  <div ng-app="chipsCustomInputDemo" ng-controller="CustomInputDemoCtrl" layout="column">
+    <md-content layout-padding class="autocomplete" layout="column">
+      <md-chips ng-model="selectedVegetables" md-autocomplete-snap md-require-match>
+        <md-autocomplete id='Auto'
+                         md-min-length="1"
+                         ng-enter="presEnter();"
+                         md-no-cache="true"                        
+                         md-selected-item="selectedItem" 
+                         md-search-text="searchText" 
+                         md-items="item in querySearch(searchText)"
+                         md-item-text="item.name" 
+                         placeholder="Search for a vegetable">
+          <span md-highlight-text="searchText">{{item.name}} :: {{item.type}}</span>
+        </md-autocomplete>
+        <md-chip-template>
+          <span>
+          <strong>{{$chip.name}}</strong>
+          <em>({{$chip.type}})</em>
+        </span>
+        </md-chip-template>
+      </md-chips>
+      <br />
+
+      <div class="md-2-line" ng-repeat="veg in vegetables">
+        <h3>{{veg.name}}</h3>
+        <p>{{veg.type}}</p>
+        <hr />
+      </div>
+    </md-content>
+  </div>
+</body>
+</html>
