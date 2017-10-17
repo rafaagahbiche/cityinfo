@@ -34,8 +34,7 @@
 }
 
 .city-picture {
-    height: 800px;
-    background-size: 100% 800px;
+    background-size: cover;
     background-repeat: no-repeat; 
     color: #fff;
 }

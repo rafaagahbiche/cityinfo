@@ -1,5 +1,5 @@
 mainApp.controller('CityCtrl', CityCtrl);
-function CityCtrl($scope, weatherforecastService, eventsService) {
+function CityCtrl($scope, $window, weatherforecastService, eventsService) {
 	$scope.eventsWithImage = [];
 	$scope.eventsWithNoImage = [];
 	$scope.FiveDaysWeatherForecast = [];
@@ -15,7 +15,18 @@ function CityCtrl($scope, weatherforecastService, eventsService) {
 		$scope.GetWeatherToday();
 		$scope.GetWeatherNextFiveDays();
 		$scope.GetEventsInCity();
-		$scope.selectedCity.Image = GoogleResult.photos[0].getUrl({'maxWidth': 1024});
+		if ($window.innerWidth > 1024) {
+			$scope.selectedCity.Image = GoogleResult.photos[0].getUrl({'maxWidth': 1024, 'maxHeight': 778});
+			$scope.selectedCity.ImageHeight = "778px";
+			$scope.selectedCity.ImageStyle = {'background-image' : 'url(' + $scope.selectedCity.Image + ')',
+											  'height' : '778px' };
+		} else {
+			$scope.selectedCity.Image = GoogleResult.photos[0].getUrl({'maxWidth': 375, 'maxHeight': 250});
+			$scope.selectedCity.ImageHeight = "250px";
+			$scope.selectedCity.ImageStyle = {'background-image' : 'url(' + $scope.selectedCity.Image + ')',
+			'height' : "250px" };
+		}
+
 		var addressObj = GoogleResult.address_components;
 		if (addressObj !== null 
 			&& addressObj !== undefined 
