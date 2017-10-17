@@ -99,7 +99,7 @@
 
 .tab_contentWeather .weather-small-ico {
     margin: 0 auto;
-    height: 60px;
+    height: 65px;
     background-image:url(images/sprite_meteo.png);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -109,55 +109,55 @@
     background-position: 0 0;
 }
 .tab_contentWeather .weather-small-ico.sprite-01_skyIsClear-N {
-    background-position: 0 -60px;
+    background-position: 0 -65px;
 }
 .tab_contentWeather .weather-small-ico.sprite-02_fewClouds {
-    background-position: 0 -120px;
+    background-position: 0 -130px;
 }
 .tab_contentWeather .weather-small-ico.sprite-02_fewClouds-N {
-    background-position: 0 -180x;
+    background-position: 0 -195x;
 }
 .tab_contentWeather .weather-small-ico.sprite-03_scatteredClouds {
-    background-position: 0 -240px;
+    background-position: 0 -260px;
 }
 .tab_contentWeather .weather-small-ico.sprite-03_scatteredClouds-N {
-    background-position: 0 -300px;
+    background-position: 0 -325px;
 }
 .tab_contentWeather .weather-small-ico.sprite-04_brokenClouds{
-    background-position: 0 -360px;
+    background-position: 0 -390px;
 }
 .weather-small-ico.sprite-04_brokenClouds-N{
-    background-position: 0 -420px;
+    background-position: 0 -455px;
 }
 .tab_contentWeather .weather-small-ico.sprite-05_showerRain{
-    background-position: 0 -480px;
+    background-position: 0 -520px;
 }
 .tab_contentWeather .weather-small-ico.sprite-05_showerRain-N{
-    background-position: 0 -540px;
+    background-position: 0 -585px;
 }
 .tab_contentWeather .weather-small-ico.sprite-06_rain{
-    background-position: 0 -600px;
+    background-position: 0 -650px;
 }
 .tab_contentWeather .weather-small-ico.sprite-06_rain-N{
-    background-position: 0 -660px;
+    background-position: 0 -705px;
 }
 .tab_contentWeather .weather-small-ico.sprite-07_thunderstorm{
-    background-position: 0 -720px;
+    background-position: 0 -770px;
 }
 .tab_contentWeather .weather-small-ico.sprite-07_thunderstorm-N{
-    background-position: 0 -780px;
+    background-position: 0 -835px;
 }
 .tab_contentWeather .weather-small-ico.sprite-08_snow{
-    background-position: 0 -840px;
+    background-position: 0 -900px;
 }
 .tab_contentWeather .weather-small-ico.sprite-08_snow-N{
     background-position: 0 -900px;
 }
 .tab_contentWeather .weather-small-ico.sprite-09_mist{
-    background-position: 0 -960px;
+    background-position: 0 -965px;
 }
 .tab_contentWeather .weather-small-ico.sprite-09_mist-N{
-    background-position: 0 -1020px;
+    background-position: 0 -1030px;
 }
 
 .tab_contentWeather .weather-ico.sprite-01_skyIsClear {
