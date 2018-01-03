@@ -36,7 +36,7 @@ $imageWindowHeight : percentage(1/17);
 	
 	.weather-ico {
 		margin: 0 auto;
-		padding-top: $imageWindowRatio/2;
+		padding-top: 150px;
 		width: 180px;
 		@extend .background-image;
 	}
