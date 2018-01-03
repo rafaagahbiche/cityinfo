@@ -64,7 +64,7 @@
 				</div>
 			</div>
 			<section class="row">
-				<div ng-show="loading" class="col-md-2 col-md-offset-5">
+				<div ng-show="loading" class="col-md-2 col-md-offset-5 col-xs-offset-4">
 					<div class="loader"></div>
 				</div>
 				<div ng-show="eventsFound" class="section-title col-md-12">
@@ -75,7 +75,7 @@
 						<div><img src="{{ev.image}}" /></div>
 						<div class="event-title"><strong>{{ev.title}}</strong></div>
 						<div class="event-time">
-							<i>{{ev.time | date:'medium'}}</i>
+							<i>{{ev.time | date:'MMM d, y hh:mm a'}}</i>
 							<div>{{ev.venue}}</div>
 						</div>
 						<!-- <div ng-bind-html="ev.description | to_trusted"></div> -->
@@ -83,6 +83,6 @@
 				</div>
 			</section>				
 		</div>
-		<footer></footer>
+		<footer>&nbsp;</footer>
 	</body>
 </html>

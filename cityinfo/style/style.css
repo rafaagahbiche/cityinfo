@@ -69,8 +69,6 @@
 .col-lg-15 {
     position: relative;
     min-height: 1px;
-    /* padding-right: 10px;
-    padding-left: 10px; */
 }
 
 .col-xs-15 {
@@ -85,4 +83,8 @@
 
 .bloc_right-column .weather-infosGlobal {
     position:relative;
+}
+
+footer {
+    margin-top: 25px;
 }
