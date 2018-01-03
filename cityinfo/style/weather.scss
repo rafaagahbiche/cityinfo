@@ -18,19 +18,15 @@ $imageWindowHeight : percentage(1/17);
 
 .tab_contentWeather {
 	margin-top : 20px;
-	.weather-ico.sprite-9,
-	.weather-small-ico.sprite-9 {
-		background-position: 0 100%;
-	}
 
 	@for $i from 0 through 8 {
-		.weather-small-ico.sprite-#{$i},
-		.weather-ico.sprite-#{$i} {
+		.weather-small-ico.sprite-#{$i+1},
+		.weather-ico.sprite-#{$i+1} {
 			background-position: 0 $imageWindowHeight *$i*2;
 		}
 
-		.weather-small-ico.sprite-#{$i}-N,
-		.weather-ico.sprite-#{$i}-N {
+		.weather-small-ico.sprite-#{$i+1}-N,
+		.weather-ico.sprite-#{$i+1}-N {
 			background-position: 0 $imageWindowHeight *($i*2 + 1);
 		}
 	}

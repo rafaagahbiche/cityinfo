@@ -26,7 +26,7 @@ mainApp
 			classret = 'sprite-7' + nightCode;
 		}
 
-		// Shower Rain
+		// Shower Rain - Drizzle
 		if ((code >= 300 && code <= 321) || (code >= 520 && code <= 531)) {
 			classret = 'sprite-5' + nightCode;
 		}
