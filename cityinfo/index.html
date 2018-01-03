@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="style/style.css">
+		<link rel="stylesheet" href="style/weather.css">
 		<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
         <script src="../node_modules/angular/angular.js"></script> 
         <script src="../node_modules/angular-aria/angular-aria.js"></script> 
@@ -56,7 +57,7 @@
 							<div>{{d.date*1000 | date:'EEE, MMM d'}}</div>
 							<div ng-class="d.cssClass" class="weather-small-ico"></div>
 							<div class="weather-small-info">
-								<div>{{d.temp_max}}º - {{d.temp_min}}º</div>
+								<div>{{d.temp_max}}º / {{d.temp_min}}º</div>
 							</div>
 						</div>
 					</div>	

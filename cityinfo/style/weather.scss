@@ -1,0 +1,80 @@
+$imageWindowRatio : percentage(15/18);
+$imageWindowHeight : percentage(1/17);
+
+.background-image {
+	background-image: url(images/sprite_meteo.png);
+	background-repeat: no-repeat;
+}
+
+.weather-small {
+    position: relative;
+    font-size: 11px;
+    text-align: center;
+}
+
+.bloc_right-column .weather-infosGlobal{
+    position:relative;
+}
+
+.tab_contentWeather {
+	.weather-ico.sprite-9,
+	.weather-small-ico.sprite-9 {
+		background-position: 0 100%;
+	}
+
+	@for $i from 0 through 8 {
+		.weather-small-ico.sprite-#{$i},
+		.weather-ico.sprite-#{$i} {
+			background-position: 0 $imageWindowHeight *$i*2;
+		}
+
+		.weather-small-ico.sprite-#{$i}-N,
+		.weather-ico.sprite-#{$i}-N {
+			background-position: 0 $imageWindowHeight *($i*2 + 1);
+		}
+	}
+	
+	.weather-ico {
+		margin: 0 auto;
+		padding-top: $imageWindowRatio/2;
+		width: 180px;
+		@extend .background-image;
+	}
+
+	.weather-small-ico {
+		margin: 0 auto;
+		padding-top: $imageWindowRatio;
+		background-size: 100%;
+		@extend .background-image;
+	}
+
+	.weather-infosLeft span {
+		display:block;
+		color:#a3a3a3;
+	}
+
+	.weatherDate {
+		font-size:13px;
+		font-weight:700;
+	}
+
+	.weatherCity {
+		font-size: 15px;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+
+	.weatherInfo {
+		font-size:15px;
+	}
+	
+	.weather-infosRight {
+		position: absolute;
+		bottom: 0;
+		right: 10px;
+		line-height: 38px;
+		font-size:45px;
+		color:#a3a3a3;
+		letter-spacing: -3px;
+	}
+}
